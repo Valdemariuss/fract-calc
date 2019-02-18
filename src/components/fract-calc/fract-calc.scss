@@ -1,0 +1,72 @@
+.fract-calc {
+  display: block;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    padding: 0;
+    margin: 0.5em 0 0.2em 0;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0.3em 0;
+  }
+
+  &__btn {
+    font-size: 0.8em;
+    margin: 0.5em 0 1em 0;
+  }
+
+  &__res {
+    white-space: break;
+    word-break: break-all;
+    text-overflow: ellipsis;
+  }
+}
+
+.fract-calc-fraction {
+  position: relative;
+
+  &._disable {
+    opacity: 0.6;
+  }
+
+  &__input {
+    max-width: 3.7em;
+  }
+
+  &__line {
+    display: block;
+    background: #6c757d;
+    height: 0.05em;
+    padding: 0;
+    margin: 0.3em 0;
+    overflow: hidden;
+  }
+
+  &__remove {
+    font-size: 0.6em;
+    position: absolute;
+    right: -1em;
+    top: -1em;
+    margin: 0;
+    vertical-align: baseline;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+}
+
+.fract-calc-operation {
+  padding: 0 .5em;
+
+  &__badge {
+    vertical-align: middle;
+  }
+}
